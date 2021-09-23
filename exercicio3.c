@@ -12,7 +12,7 @@ int main (){
         printf ("\nSeu robô fez 2 pontos.");
     }
     else if (d <= 2000){
-        printf ("\nSeu robô fez 2 pontos.");
+        printf ("\nSeu robô fez 3 pontos.");
     }
     else {
         printf ("\nDistância inválida.");
