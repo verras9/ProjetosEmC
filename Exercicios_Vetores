@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+/*Crie um programa em linguagem C para ler três notas para um aluno. Apresente as três notas lidas. */
+
+int main(){
+    int notas[3];
+    int i;
+
+    for(i=0;i<3;i++){
+        printf ("\nQual o valor da sua %d nota? ",i+1);
+        scanf ("%d", &notas[i]);
+    }
+
+    for(i=0;i<3;i++){
+        printf ("\nSuas notas sao: %d", notas[i]);
+    }
+
+    return 0;
+}
