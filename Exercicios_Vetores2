@@ -1,0 +1,44 @@
+#include <stdio.h>
+
+/*Crie um programa em linguagem C para 10 valores inteiros do usuário. Apresente:
+- A soma dos valores fornecidos;
+- Os valores pares fornecidos;
+- Os valores ímpares fornecidos.
+*/
+int main(){
+
+    int x[10], i;
+    int soma = 0, par[10], impar[10], contadorPar = 0, contadorImpar = 0;
+
+    for(i=0;i<10;i++){
+        printf("\nInforme o %d valor: ", i+1);
+        scanf("%d", &x[i]);
+
+        soma += x[i];
+    }
+
+    for(i=0;i<10;i++){
+
+        if (x[i] % 2 == 0){
+            par[contadorPar] = x[i];
+            contadorPar++;
+            }
+
+        else{
+        impar[contadorImpar] = x[i];
+        contadorImpar++;
+        }    
+    }
+    printf("\nValores Pares:");
+    for (i=0;i<contadorPar;i++){
+        printf(" %d,",par[i]);
+    }
+    printf("\nValores Impares:");
+    for (i=0;i<contadorImpar;i++){
+        printf(" %d,",impar[i]);
+    }
+
+    printf("\nSoma: %d",soma);
+
+    return 0;
+}
